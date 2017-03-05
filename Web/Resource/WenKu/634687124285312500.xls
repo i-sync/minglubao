@@ -1,0 +1,47 @@
+USE [MLMGCDB]
+GO
+/****** Object:  StoredProcedure [dbo].[ProcB_UserS_Login]    Script Date: 02/24/2012 11:34:17 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+-- =============================================
+-- Author:		qipengfei
+-- Create date: 2011-10-19
+-- Description:	个人用户登录
+-- =============================================
+ALTER PROCEDURE [dbo].[ProcB_UserS_Login]
+	@UserName VARCHAR(128)--登录用户名
+	,@Password VARCHAR(128)--登录密码
+	,@UserType TINYINT --用户类型 1=企业用户,2=个人用户	
+AS
+BEGIN
+	IF @UserType=1--企业用户
+	BEGIN
+		--获取企业编号
+		DECLARE @EnterpriseID INT,@sql NVARCHAR(max),@EPCode VARCHAR(32);
+		SET @EPCode = 
+		SUBSTRING('@UserName',CHARINDEX('@','@UserName')+1,LEN('@UserName')-CHARINDEX('@','@UserName'));
+		SELECT @EnterpriseID=EnterpriseID FROM dbo.EP_B_Enterprise WHERE EnterpriseCode=@EPCode AND 
+		[ExpireDate]>=GETDATE() AND [Status]=1;
+		SET @sql='SELECT c.UserID,EnterpriseID=@EnterpriseID FROM
+		(SELECT UserID FROM EP_B_EnterpriseUser eu 
+			WHERE EnterpriseID=@EnterpriseID AND exists(select * from EP_R_EPUserTMR tmr where tmr.EnterpriseID 
+			= @EnterpriseID and eu.EPUserID=tmr.EPUserID))b
+		INNER JOIN(SELECT UserID,UserName FROM dbo.B_User WHERE UserName=@UserName AND [Password]=@Password AND 
+		[Status]=1 AND UserType=1)c ON b.UserID = c.UserID';
+		EXEC sp_executesql @sql,N'@EnterpriseID int,@UserName VARCHAR(128),@Password 
+		VARCHAR(128)',@EnterpriseID,@UserName,@Password
+	END
+	ELSE IF @UserType=2--个人用户
+	BEGIN
+		SELECT u.UserID,PersonalID EnterpriseID FROM
+		(SELECT UserID FROM dbo.B_User WHERE UserType=2 AND [Status]=1 AND UserName=@UserName AND 
+		[Password]=@Password)u
+		INNER JOIN(SELECT UserID,PersonalID FROM dbo.PI_B_Personal)p ON u.UserID = p.UserID;
+	END
+END
+
+

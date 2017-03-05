@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <CorreField>
+    <Field Name="ClientName" title="名称" Source="" />
+    <Field Name="Address" title="地址" Source="" />
+    <Field Name="ZipCode" title="邮编" Source="" />
+    <Field Name="WebiSite" title="网址" Source="" />
+    <Field Name="Linkman" title="联系人" Source="" />
+    <Field Name="Position" title="职务" Source="" />
+    <Field Name="Tel" title="电话" Source="" />
+    <Field Name="Mobile" title="手机" Source="" />
+    <Field Name="Fax" title="传真" Source="" />
+    <Field Name="Email" title="邮箱" Source="" />
+    <Field Name="QQ" title="QQ" Source="" />
+    <Field Name="MSN" title="MSN" Source="" />
+    <Field Name="Remark" title="备注" Source="" />
+  </CorreField>
+  <FileField>
+    <Field name="Field0" value="名称" />
+    <Field name="Field1" value="地址" />
+    <Field name="Field2" value="邮编" />
+    <Field name="Field3" value="联系人" />
+    <Field name="Field4" value="职务" />
+    <Field name="Field5" value="电话" />
+    <Field name="Field6" value="手机" />
+    <Field name="Field7" value="传真" />
+    <Field name="Field8" value="网址" />
+    <Field name="Field9" value="邮箱" />
+    <Field name="Field10" value="QQ" />
+    <Field name="Field11" value="MSN" />
+    <Field name="Field12" value="来源编码" />
+    <Field name="Field13" value="行业编码" />
+    <Field name="Field14" value="地区编码" />
+    <Field name="Field15" value="备注" />
+  </FileField>
+  <List>
+    <Item id="1">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="2">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="3">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="4">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="5">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="6">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="7">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="8">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="9">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="10">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="11">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="12">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="13">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="14">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">476000</Data>
+      <Data name="Field3">王清云</Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">13436142015</Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">123456789</Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="15">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="16">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="17">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="18">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="19">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="20">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="21">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="22">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="23">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+    <Item id="24">
+      <Data name="Field0">2012020701</Data>
+      <Data name="Field1">
+      </Data>
+      <Data name="Field2">
+      </Data>
+      <Data name="Field3">
+      </Data>
+      <Data name="Field4">
+      </Data>
+      <Data name="Field5">
+      </Data>
+      <Data name="Field6">
+      </Data>
+      <Data name="Field7">
+      </Data>
+      <Data name="Field8">
+      </Data>
+      <Data name="Field9">
+      </Data>
+      <Data name="Field10">
+      </Data>
+      <Data name="Field11">
+      </Data>
+      <Data name="Field12">
+      </Data>
+      <Data name="Field13">
+      </Data>
+      <Data name="Field14">
+      </Data>
+      <Data name="Field15">
+      </Data>
+    </Item>
+  </List>
+</root>

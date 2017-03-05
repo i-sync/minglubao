@@ -1,0 +1,8 @@
+RESTORE FILELISTONLY FROM DISK ='E:\2012-01-31.bak'
+
+RESTORE DATABASE MLMGCDB FROM DISK='E:\2012-01-31.bak'
+WITH recovery,
+MOVE 'MLMGCDB' TO 'D:\DataBase\MLMGCDB.mdf',
+MOVE 'MLMGCDB_log' TO 'D:\DataBase\MLMGCDB_log.ldf';
+
+backup database '' to disk ='';

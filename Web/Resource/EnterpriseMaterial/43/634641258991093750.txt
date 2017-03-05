@@ -1,0 +1,38 @@
+DECLARE @id INT ;
+SET @id = 34;
+ UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+ (SELECT * FROM dbo.EP_34_B_AllotStatiUser)a
+ INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID
+  
+ SELECT * FROM dbo.EP_34_R_EPUserTMR 
+ SELECT * FROM dbo.EP_R_EPUserTMR
+  
+ SELECT * FROM dbo.EP_34_R_TeamMember
+ SELECT * FROM dbo.EP_34_B_UserPlan
+ SELECT * FROM dbo.EP_34_B_InputStatistics
+ SELECT * FROM dbo.EP_34_R_ClientItemUser
+ SELECT * FROM dbo.EP_34_R_ClientItemWish
+ SELECT * FROM dbo.EP_34_R_ClientItemTeam
+ SELECT * FROM dbo.EP_34_R_ClientItemScrap
+ SELECT * FROM dbo.EP_34_R_CIQuestion
+ SELECT * FROM dbo.EP_34_R_CINotTraded
+ SELECT * FROM dbo.EP_34_B_Reservation
+ SELECT * FROM dbo.EP_34_B_Exchange
+ SELECT * FROM dbo.EP_34_B_ClientItemTraded
+ SELECT * FROM dbo.EP_34_B_ClientInfo
+ SELECT * FROM dbo.EP_34_B_AllotUserConfig
+ SELECT * FROM dbo.EP_34_B_AllotUser
+ SELECT * FROM dbo.EP_34_B_AllotStatiUser
+ 
+ -----------------------------------
+ DECLARE @id INT ;
+ SET @id = 34;
+ UPDATE a SET a.EPUserID = b.EPUserID FROM 
+ (SELECT * FROM dbo.EP_34_B_Weibo)a
+ INNER JOIN(SELECT * FROM dbo.EP_B_EnterpriseUser WHERE EnterpriseID =@id) b ON a.EPUserID= b.oldID
+ 
+ 
+ SELECT * FROM dbo.EP_34_B_EnterpriseUser
+ SELECT * FROM dbo.EP_B_EnterpriseUser
+ 
+ SELECT * FROM dbo.EP_34_B_Weibo

@@ -1,0 +1,2 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PropertyArea.aspx.cs" 
+Inherits="Web.Personal.Config.PropertyArea" %>

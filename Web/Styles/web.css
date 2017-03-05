@@ -1,0 +1,132 @@
+﻿.a
+{
+	border: 1px solid red;
+	width: 100px;
+}
+img{ border:0;}
+.wrap
+{
+	width: 1004px;
+	margin: auto;
+}
+.dengbubg{background: url(../images/denglubj.jpg) no-repeat;height: 597px;}
+.wrap .top
+{
+	margin: 12px 33px 0 33px;
+	height: 64px;
+}
+.wrap .top .logo
+{
+	margin: 10px 0 0 0;
+}
+.wrap .top .link
+{
+	margin: 38px 0 0 0;
+}
+.wrap .top .link a
+{
+	font-size: 16px;
+	height: 16px;
+	color: #797b80;
+	margin: 0 0 0 16px;
+}
+.wrap .top .link a:hover
+{
+	color: Black;
+}
+.wrap .fl
+{
+	float: left;
+}
+.wrap .fr
+{
+	float: right;
+}
+.wrap .loginTag
+{
+	width: 92px;
+	height: 310px;
+	margin: 93px 0 0 513px;
+	position: absolute;
+	cursor: pointer;
+}
+.wrap .loginTag div
+{
+	width: 92px;
+	height: 155px;
+}
+.wrap .curep
+{
+	background: url(../images/logintab.png) no-repeat 0 0;
+}
+.wrap .curps
+{
+	background: url(../images/logintab.png) no-repeat -102px 0px;
+}
+.wrap .loginform
+{
+	position: absolute;
+	width: 355px;
+	height: 280px;
+	margin: 135px 0 0 608px;
+}
+.wrap .loginform .nametag
+{
+	width: 80px;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: right;
+	font-weight: bold;
+}
+.wrap .loginform tr
+{
+	height: 50px;
+	line-height: 50px;
+}
+.wrap .loginform label
+{
+	margin: 0 0 0 4px;
+	font-size: 14px;
+}
+.wrap .loginform .zhmm
+{
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 0 0 30px;
+	display: inline-block;
+}
+.copyright
+{
+	text-align: center;
+	margin: 0;
+	line-height:180%; height:25px; vertical-align:middle;
+}
+
+.webkuang{ border:1px solid #c4cbd1; margin:20px 0 0 0; position:relative; width:100%;}
+.webkuang .app{ background:url(../images/mlb.png) -74px -29px; _background:url(../images/mlb_ie6.png) -74px -29px; height:28px; width:232px; margin:20px 0 20px 10px; line-height:28px; text-indent:30px; color:White; font-size:14px;}
+.webkuang .webkuangfoot{ height:34px; margin:auto 0 -3px 0; background:url(../images/kuangbbg.jpg); background-repeat:repeat-x;}
+
+.webkuang .reg{ margin:20px auto auto 20px; height:28px; line-height:24px; text-align:center; font-size:14px;}
+.webkuang .reg .regcur{ background:url(../images/regcurbg.jpg); width:300px; float:left; height:28px; color:White;}
+.webkuang .reg .regitem{ background:url(../images/regitembg.jpg); width:300px; float:left;height:28px; margin:0;}
+.webkuang .reg .regci{ width:16px; float:left; margin:0; padding:0; display:block; background:url(../images/mlb.png) 0 -66px;height:28px;}
+.webkuang .reg .regii{ width:16px; float:left; margin:0; padding:0; display:block; background:url(../images/mlb.png) -30px -66px;height:28px;}
+.webkuang .reg .regic{ width:16px; float:left; margin:0; padding:0; display:block; background:url(../images/mlb.png) -60px -66px;height:28px;}
+.webkuang .regsucc{ height:33px;background:url(../images/mlb.png) -92px -66px;}
+.webkuang .regsucc .regsucctip{background-color:White; height:100%; margin-left:33px; font-size:20px; line-height:30px; text-indent:20px;}
+.logintip{ line-height:24px; height:24px; display:block; font-size:16px; margin:10px auto 100px 53px;}
+
+.tabweblist{ font-size:14px; margin:4px auto 10px 30px;}
+.tabweblist tr{ height:46px;}
+.tabweblist .name{ text-align:right; font-weight:bold;}
+
+/*公告页面*/
+.annindexlist{ width:90%; margin:auto;line-height:180%;}
+.annindexlist li{list-style-type:circle; font-size:14px; height:30px; color:#999999; line-height:28px;}
+.annindexlist li a{ color:#000000; font-size:14px;}
+.annindexlist li :hover{ color:Red;}
+.anninfopage{ width:90%; margin:10px auto 10px auto;}
+.anninfopage .title{ text-align:center;}
+.anninfopage .titBar{ font-size:12px; text-align:right; color:#7e7e7e; margin:0; line-height:120%;}
+.anninfopage .content{ line-height:180%; font-size:14px; margin-top:4px;}

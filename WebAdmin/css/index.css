@@ -1,0 +1,31 @@
+﻿BODY{
+	margin:0px;
+	FONT-SIZE: 12px;
+	FONT-FAMILY:  "宋体", "Verdana", "Arial", "Helvetica", "sans-serif";
+	background-color: #BEBFD9;
+	scrollbar-face-color: #EAEAF2;
+		scrollbar-highlight-color: #FFFFFF;
+		scrollbar-shadow-color: #9395C0;
+		scrollbar-3dlight-color: #F3F3F8;
+		scrollbar-arrow-color: #9395C0;
+		scrollbar-track-color: #F3F3F8;
+		scrollbar-darkshadow-color: #F3F3F8;
+}
+table  { border:0px; }
+td  { font:normal 12px 宋体; }
+img  { vertical-align:bottom; border:0px; }
+a  { font:normal 12px 宋体; color:#111111; text-decoration:none; }
+a:hover  { color:#6C70AA;text-decoration:underline; }
+.sec_menu  { border-left:1px solid white; border-right:1px solid white; border-bottom:1px solid white; background:#FBFBFC; }
+.menu_title  { }
+.menu_title span  { position:relative; top:2px; left:8px; color:#4A4F80; font-weight:bold; }
+.menu_show{ background:url(../images/title_bg_show.gif);}
+.menu_hide{ background:url(../images/title_bg_hide.gif);}
+.menu_title2  { }
+.menu_title2 span  { position:relative; top:2px; left:8px; color:#596099; font-weight:bold; }
+input,select,Textarea{
+font-family:宋体,Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
+
+
+#divPage .left{width: 160px; float: left; background-color: White; margin:0; padding:0;}
+#divPage .right{float: left;height: 100%; background-color: White; margin:0; padding:0;}

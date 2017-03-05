@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41A5EF4D-A968-4DB8-A70B-DF763CAC4010}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLMGC.DAL</RootNamespace>
+    <AssemblyName>MLMGC.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D_Feedback.cs" />
+    <Compile Include="Item\D_ItemClientInfo.cs" />
+    <Compile Include="Item\D_ItemExchange.cs" />
+    <Compile Include="Item\D_ItemApply.cs" />
+    <Compile Include="D_Region.cs" />
+    <Compile Include="Enterprise\Announcement\D_Announcement.cs" />
+    <Compile Include="Enterprise\Config\D_Standard.cs" />
+    <Compile Include="Enterprise\D_Allot.cs" />
+    <Compile Include="Enterprise\D_Apply.cs" />
+    <Compile Include="Enterprise\D_Area.cs" />
+    <Compile Include="Enterprise\D_ClientInfo.cs" />
+    <Compile Include="Enterprise\D_ClientInfoData.cs" />
+    <Compile Include="Enterprise\D_ClientInfoHelper.cs" />
+    <Compile Include="Enterprise\D_Enterprise.cs" />
+    <Compile Include="Enterprise\D_EnterpriseDB.cs" />
+    <Compile Include="Enterprise\D_Exchange.cs" />
+    <Compile Include="Enterprise\D_Item.cs" />
+    <Compile Include="Enterprise\D_ItemMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\D_Log.cs" />
+    <Compile Include="Enterprise\D_MailConfig.cs" />
+    <Compile Include="Enterprise\D_Menu.cs" />
+    <Compile Include="Enterprise\D_NotTraded.cs" />
+    <Compile Include="Enterprise\D_Property.cs" />
+    <Compile Include="Enterprise\D_Scrap.cs" />
+    <Compile Include="Enterprise\D_Source.cs" />
+    <Compile Include="Enterprise\D_Team.cs" />
+    <Compile Include="Enterprise\D_TeamModel.cs" />
+    <Compile Include="Enterprise\D_Trade.cs" />
+    <Compile Include="Enterprise\D_Weibo.cs" />
+    <Compile Include="Enterprise\D_Wish.cs" />
+    <Compile Include="Enterprise\Material\D_Material.cs" />
+    <Compile Include="Enterprise\Material\D_Question.cs" />
+    <Compile Include="Enterprise\Material\D_StudyMaterial.cs" />
+    <Compile Include="Enterprise\Material\D_Talk.cs" />
+    <Compile Include="Enterprise\Plan\D_TeamPlan.cs" />
+    <Compile Include="Enterprise\Plan\D_UserPlan.cs" />
+    <Compile Include="Item\D_ItemMember.cs" />
+    <Compile Include="Personal\Config\D_Area.cs" />
+    <Compile Include="Personal\Config\D_MailConfig.cs" />
+    <Compile Include="Personal\Config\D_NotTraded.cs" />
+    <Compile Include="Personal\Config\D_Property.cs" />
+    <Compile Include="Personal\Config\D_Scrap.cs" />
+    <Compile Include="Personal\Config\D_Source.cs" />
+    <Compile Include="Personal\Config\D_Trade.cs" />
+    <Compile Include="Personal\Config\D_Wish.cs" />
+    <Compile Include="Personal\D_ClientInfo.cs" />
+    <Compile Include="Personal\D_Exchange.cs" />
+    <Compile Include="Personal\D_JobExperience.cs" />
+    <Compile Include="Personal\D_Weibo.cs" />
+    <Compile Include="Personal\Material\D_Talk.cs" />
+    <Compile Include="Public\D_Announcement.cs" />
+    <Compile Include="User\D_Admin.cs" />
+    <Compile Include="User\D_Personal.cs" />
+    <Compile Include="User\D_User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WenKu\D_WenKu.cs" />
+    <Compile Include="WenKu\D_WenKuClass.cs" />
+    <Compile Include="WenKu\D_WenKuDownload.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MLMGC.COMP\MLMGC.COMP.csproj">
+      <Project>{E0E82F1D-C857-4CDC-8142-6F9526DBFB45}</Project>
+      <Name>MLMGC.COMP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMGC.DataEntity\MLMGC.DataEntity.csproj">
+      <Project>{DC24AC27-029E-4457-99A8-A99AA402E0E7}</Project>
+      <Name>MLMGC.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMGC.DBUtility\MLMGC.DBUtility.csproj">
+      <Project>{56AAB6C5-1E36-4AAB-AF3E-22633C65026C}</Project>
+      <Name>MLMGC.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMGC.IDAL\MLMGC.IDAL.csproj">
+      <Project>{0E0C1DA7-EE05-4BBC-9D6C-03894A2AE809}</Project>
+      <Name>MLMGC.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

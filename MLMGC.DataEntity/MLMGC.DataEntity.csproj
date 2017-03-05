@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC24AC27-029E-4457-99A8-A99AA402E0E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLMGC.DataEntity</RootNamespace>
+    <AssemblyName>MLMGC.DataEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enterprise\Announcement\E_Announcement.cs" />
+    <Compile Include="Enterprise\Config\E_Standard.cs" />
+    <Compile Include="Enterprise\E_Allot.cs" />
+    <Compile Include="Enterprise\E_Apply.cs" />
+    <Compile Include="Enterprise\E_Area.cs" />
+    <Compile Include="Enterprise\E_ClientInfo.cs" />
+    <Compile Include="Enterprise\E_ClientInfoHelper.cs" />
+    <Compile Include="Enterprise\E_Enterprise.cs" />
+    <Compile Include="Enterprise\E_EnterpriseDB.cs" />
+    <Compile Include="Enterprise\E_Exchange.cs" />
+    <Compile Include="Enterprise\E_Item.cs" />
+    <Compile Include="Enterprise\E_ItemMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\E_Log.cs" />
+    <Compile Include="Enterprise\E_MailConfig.cs" />
+    <Compile Include="Enterprise\E_Menu.cs" />
+    <Compile Include="Enterprise\E_NotTraded.cs" />
+    <Compile Include="Enterprise\E_Property.cs" />
+    <Compile Include="Enterprise\E_Reservation.cs" />
+    <Compile Include="Enterprise\E_Scrap.cs" />
+    <Compile Include="Enterprise\E_Source.cs" />
+    <Compile Include="Enterprise\E_Team.cs" />
+    <Compile Include="Enterprise\E_TeamModel.cs" />
+    <Compile Include="Enterprise\E_Trade.cs" />
+    <Compile Include="Enterprise\E_Weibo.cs" />
+    <Compile Include="Enterprise\E_Wish.cs" />
+    <Compile Include="Enterprise\Material\E_Material.cs" />
+    <Compile Include="Enterprise\Material\E_Question.cs" />
+    <Compile Include="Enterprise\Material\E_QuestionItem.cs" />
+    <Compile Include="Enterprise\Material\E_StudyMateFile.cs" />
+    <Compile Include="Enterprise\Material\E_StudyMaterial.cs" />
+    <Compile Include="Enterprise\Material\E_Talk.cs" />
+    <Compile Include="Enterprise\Plan\E_TeamPlan.cs" />
+    <Compile Include="Enterprise\Plan\E_UserPlan.cs" />
+    <Compile Include="E_Feedback.cs" />
+    <Compile Include="Item\E_ItemExchange.cs" />
+    <Compile Include="Item\E_ItemApply.cs" />
+    <Compile Include="E_Page.cs" />
+    <Compile Include="E_Region.cs" />
+    <Compile Include="Item\E_ItemMember.cs" />
+    <Compile Include="Personal\Config\E_Area.cs" />
+    <Compile Include="Personal\Config\E_MailConfig.cs" />
+    <Compile Include="Personal\Config\E_NotTraded.cs" />
+    <Compile Include="Personal\Config\E_Property.cs" />
+    <Compile Include="Personal\Config\E_Scrap.cs" />
+    <Compile Include="Personal\Config\E_Source.cs" />
+    <Compile Include="Personal\Config\E_Trade.cs" />
+    <Compile Include="Personal\Config\E_Wish.cs" />
+    <Compile Include="Personal\E_ClientInfo.cs" />
+    <Compile Include="Personal\E_Exchange.cs" />
+    <Compile Include="Personal\E_JobExperience.cs" />
+    <Compile Include="Personal\E_Weibo.cs" />
+    <Compile Include="Personal\Material\E_Talk.cs" />
+    <Compile Include="PFileInfo.cs" />
+    <Compile Include="Public\E_Announcement.cs" />
+    <Compile Include="Item\E_ItemClientInfo.cs" />
+    <Compile Include="User\E_Admin.cs" />
+    <Compile Include="User\E_EnterpriseUser.cs" />
+    <Compile Include="User\E_Personal.cs" />
+    <Compile Include="User\E_PersonalUser.cs" />
+    <Compile Include="User\E_PinsouUser.cs" />
+    <Compile Include="User\E_User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WenKu\E_WenKu.cs" />
+    <Compile Include="WenKu\E_WenKuClass.cs" />
+    <Compile Include="WenKu\E_WenKuDownload.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

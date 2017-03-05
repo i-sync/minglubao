@@ -1,0 +1,43 @@
+SELECT * FROM dbo.EP_B_Material
+--SELECT * FROM dbo.EP_B_StudyMaterial
+SELECT * FROM dbo.EP_B_StudyMateFile
+
+
+--合并Material和StudyMaterial表
+--第一步：把EP_B_Material中的MaterialType字段修改为1
+UPDATE dbo.EP_B_Material SET MaterialType = 1;
+--第二步：为EP_B_Material添加oldid字段(用户存储StudyMaterial的StudyMaterialID)
+
+--第三步: 把StudyMaterial表中的所有数据添加到Material表中
+INSERT INTO dbo.EP_B_Material( EnterpriseID ,MaterialName ,ClassName ,AddDate ,UpdateDate ,MaterialType,oldid)
+SELECT EnterpriseID,MaterialName,'',AddDate,UpdateDate,2,StudyMaterialID FROM dbo.EP_B_StudyMaterial
+
+--第四步:把附件EP_B_StudyMateFile表的所有数据 对应到EP_B_Material
+UPDATE s SET s.StudyMaterialID = m.MaterialID FROM 
+(SELECT MaterialID,oldid FROM dbo.EP_B_Material WHERE MaterialType = 2) m
+INNER JOIN (SELECT StudyMaterialID FROM dbo.EP_B_StudyMateFile) s ON m.oldid = s.StudyMaterialID
+
+--第五步:删Material表中oldid字段
+
+
+
+SELECT * FROM dbo.EP_B_MaterialFile
+SELECT * FROM dbo.EP_B_StudyMateFile
+--合并MaterialFile和StudyMateFile表
+--把StudyMateFile表中的数据 添加到MaterialFile中
+INSERT INTO dbo.EP_B_MaterialFile( EnterpriseID ,MaterialID ,FileName ,Url ,FileType ,FileSize)
+SELECT EnterpriseID,StudyMaterialID,[FileName],Url,FileType,FileSize FROM dbo.EP_B_StudyMateFile
+
+--修改存储过程 
+ProcEP_B_MaterialS_ListSelect
+[ProcEP_B_MaterialS_Insert]
+
+SELECT *FROM dbo.EP_B_Material
+SELECT * FROM dbo.EP_B_MaterialFile
+
+
+--合并MaterialFile和Material
+--把MaterialFile 表中的数据对应修改Material表中的数据 
+UPDATE m SET m.[FileName]=mf.[FileName],m.Url = mf.Url,m.FileType = mf.FileType,m.FileSize = mf.FileSize FROM 
+(SELECT MaterialID,[FileName],Url,FileType,FileSize FROM dbo.EP_B_Material) m 
+INNER JOIN (SELECT MaterialID,[FileName],Url,FileType,FileSize FROM dbo.EP_B_MaterialFile) mf ON m.MaterialID = mf.MaterialID

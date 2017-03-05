@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,form,dl,dt,dd{margin:0;padding:0;border:0;}
+body{background:#fff;font-size:12px;font-family:"宋体","SimSun","Arial Narrow";}
+.fl{float:left;}
+.fr{float:right;}
+a{text-decoration:none;color:#000;}
+ul,ol{list-style:none;}
+
+/*布局*/
+#wrap{margin:0 auto;width:100%; min-width:1004px;}
+
+/*头部*/
+.header{height:54px;border-bottom:1px solid #7CA1B4;background:#8BBED9;}
+.header_center{width:356px;background:url(../images/center.jpg) no-repeat;}
+.nav{margin:31px 0 0 14px;}
+.nav li{float:left;}
+.nav a{display:block;width:74px;height:23px;line-height:23px;text-align:center;color:#F3FFFF;}
+.nav a:hover,.cur{background:url(../images/a_hover.jpg) no-repeat;color:#0591CF;}
+.cur a{color:#008CD3;}
+
+.header_right{width:268px;}
+.header_right_shang{background:url(../images/right_shang.jpg) no-repeat;height:26px;}
+.xiaotubiao{margin-left:25px;height:26px;line-height:26px;_padding-top:5px;_height:21px;}
+.fankui{margin-left:5px;}
+.xiaotubiao a{color:#FFF;}
+
+.header_right_xia{background:#8BBDD8;height:23px;}
+.header_right_xia{padding:5px 0 0 15px;}
+
+/*菜单*/
+.menu{_width:155px;width:153px;}
+.list_xiugaimima{height:39px; background:#eaf6fb;}
+.guanliyuan{width:27px;margin-left:10px;_margin-left:5px;margin-top:4px;_margin-top:4px;}
+.guanliyuan_denglu{margin-left:9px;}
+.guanliyuan_denglushang{height:12px;margin-top:4px;color:#0087A8}
+.guanliyuan_dengluxia{height:12px;margin-top:4px;}
+.guanliyuan_dengluxia a{color:#CD3E3A;}
+
+.menulist{ background:white; clear:both;}
+.menulist a{ line-height:150%; margin-left:10px;}
+.menulist .curitem .title{ width:154px; height:28px; background:url(../images/menuitembg.jpg) no-repeat 0 -38px; text-indent:24px; font-weight:bold;}
+.menulist .curitem .title a{ line-height:28px; vertical-align:middle; font-size:14px;}
+.menulist .curitem ul{ display:block;}
+.menulist .item{ width:154px; height:28px; background:url(../images/menuitembg.jpg) no-repeat 0 0; text-indent:24px; font-weight:bold;}
+.menulist .item a{ line-height:28px; vertical-align:middle; font-size:14px;}
+.menulist .item ul{ display:none;}
+.menulist ul{ margin:4px 0 0 24px; line-height:180%; list-style:disc;}
+.menulist ul a.curent,.menulist ul a:hover{ color:Red;}
+
+
+.footer{height:33px;background:url(../images/footer.jpg) repeat-x;line-height:33px;color:#3197BD;clear:both; text-align:center;}
+
+.gongsimingcheng{height:23px;background:#D8F2FF;padding-left:23px;line-height:23px;}
+.fuzeren{margin-left:22px;}
+.anniuxia{margin-left:153px;border-right:1px solid #C9D1D4;height:458px;}
+
+/*选择角色*/
+#curRole{ background:url(../images/rolejiao.png) no-repeat 140px 8px; margin:0 15px 0 0; width:150px; cursor:pointer;}
+#roleInfo{ width:150px; border:1px solid #6ebd83; margin:22px 3px 0 0; display:block; position:absolute; right:10px;  background:white; line-height:120%;font-weight:bold; display:none; cursor:pointer;}
+#roleInfo .cur,#roleInfo .item:hover{ background:url(../images/roleinfobg.jpg) no-repeat; height:30px; padding:2px 0 0 0;}
+#roleInfo .item{background:url(../images/roleinfobg.jpg) no-repeat 0 -49px; height:30px;padding:2px 0 0 0; cursor:pointer;}
+#roleInfo .rolename{ display:block; margin:0 0 0 40px;}
+
+
+.dbline{ height:3px; line-height:3px; font-size:3px; display:block; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; margin:100px 0 0 0;}
+.roleInfoimg{ background:url(../images/rolebg.png) no-repeat -204px -4px; height:246px; width:169px; margin:80px 14px;display:block; padding-top:25px; float:left;}
+.roleInfoimg:hover{ background:url(../images/rolebg.png) no-repeat -7px -4px; height:246px; width:169px;color:Black;}
+.perople{ width:74px; height:158px;background:url(../images/rolebg.png) no-repeat -434px -46px;margin:0 auto; display:block;}
+.roleInfoimg .rolename{ border:0; background:none; font-size:18px; height:45px; vertical-align:bottom; line-height:45px;}
+.colorhui{ color:#ccc;}
+
+
+/*提醒*/
+#divlogKuang{ position:absolute; right:2px; bottom:0px;}
+.dialogBox{ width:288px; height:108px; border:1px solid #3066a6;background-color:White; display:none; margin:2px 0;}
+.dialogBox .dialogBox-hd{ height:28px; line-height:28px; background-color:#3066a6;}
+.dialogBox .dialogBox-hd-title{ text-indent:10px; font-size:14px; color:White; width:200px; float:left; height:26px;}
+.dialogBox .dialogBox-hd-ext{ float:right; margin:9px 10px 0 0; background:url(../images/mlb.png) no-repeat 0 0; width:8px; height:8px; cursor:pointer;}
+.dialogBox .dialogBox-bd{margin:4px; font-size:14px;}
+.dialogBox .dialogBox-simpleText{ color:red; line-height:180%;}
+.dialogBox .dialogBox-simpleText a{ color:#0475fc;}

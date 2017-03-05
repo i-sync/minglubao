@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="up.aspx.cs" Inherits="Web.ueditor.server.upload.net.up" %>

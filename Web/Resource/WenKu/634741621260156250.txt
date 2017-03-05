@@ -1,0 +1,19 @@
+RESTORE FILELISTONLY FROM DISK ='E:\2012-01-31.bak'
+
+RESTORE DATABASE MLMGCDB FROM DISK='E:\2012-01-31.bak'
+WITH recovery,
+MOVE 'MLMGCDB' TO 'D:\DataBase\MLMGCDB.mdf',
+MOVE 'MLMGCDB_log' TO 'D:\DataBase\MLMGCDB_log.ldf';
+
+backup database '' to disk ='';
+
+
+--------删除一个库所有用户表
+declare @temp nvarchar(200),@sql nvarchar(max),@num int=0;
+while exists(select name from EP_00002..sysobjects where type='u')
+begin
+	select @temp = name from EP_00144..sysobjects where type='u'
+	set @num =@num+1;
+	set @sql ='drop table '+ @temp;
+	exec(@sql);
+end

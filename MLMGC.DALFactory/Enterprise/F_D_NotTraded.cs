@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using MLMGC.IDAL.Enterprise;
+
+namespace MLMGC.DALFactory.Enterprise
+{
+    /// <summary>
+    /// 失败理由
+    /// </summary>
+    public abstract class F_D_NotTraded
+    {
+        public static I_D_NotTraded Create()
+        {
+            string ClassNamespace = DataAccess.AssemblyPath + ".Enterprise.D_NotTraded";
+            object objType = DataAccess.CreateObject(DataAccess.AssemblyPath, ClassNamespace);
+            return (I_D_NotTraded)objType;
+        }
+    }
+}

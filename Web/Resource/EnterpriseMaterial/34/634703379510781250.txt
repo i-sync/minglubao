@@ -1,0 +1,253 @@
+declare @maxID int,@id int,@sql nvarchar(max); 
+select @id=MIN(EnterpriseID),@maxID=MAX(EnterpriseID) from EP_B_Enterprise 
+
+while @id<=@maxID and @id>0 
+begin 
+
+-------------------EPUserTMRID Start-------------------
+--R_TeamMember
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_TeamMember')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_UserPlan
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_UserPlan')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_InputStatistics
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_InputStatistics')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_ClientItemUser
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_ClientItemUser')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_ClientItemWish
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_ClientItemWish')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_ClientItemTeam
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_ClientItemTeam')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_ClientItemScrap
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_ClientItemScrap')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_CIQuestion
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_CIQuestion')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--R_CINotTraded
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'R_CINotTraded')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_Reservation
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_Reservation')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_Exchange
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_Exchange')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_ClientItemTraded
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_ClientItemTraded')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_ClientInfo
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_ClientInfo')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_AllotUserConfig
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_AllotUserConfig')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_AllotUser
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_AllotUser')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_AllotStatiUser
+SET @sql ='UPDATE a SET a.EPUserTMRID = b.EPUserTMRID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_AllotStatiUser')+')a
+INNER JOIN(SELECT * FROM dbo.EP_R_EPUserTMR WHERE EnterpriseID =@id) b ON a.EPUserTMRID= b.oldID';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+-------------------EPUserTMRID End-------------------
+  
+-------------------EPUserID Start-------------------
+
+--B_Weibo
+SET @sql ='UPDATE a SET a.EPUserID = b.EPUserID FROM 
+ (SELECT * FROM '+dbo.GetEPTableName(@id,'B_Weibo')+')a
+ INNER JOIN(SELECT * FROM dbo.EP_B_EnterpriseUser WHERE EnterpriseID =@id) b ON a.EPUserID= b.oldID;';
+ EXEC sys.sp_executesql @sql,N'@id int',@id;
+ 
+--B_MailConfig
+SET @sql ='UPDATE a SET a.EPUserID = b.EPUserID FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_MailConfig')+')a
+INNER JOIN(SELECT * FROM dbo.EP_B_EnterpriseUser WHERE EnterpriseID =@id) b ON a.EPUserID= b.oldID;';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+ 
+-------------------EPUserID End-------------------
+
+print @id; 
+select @id=isnull(MIN(EnterpriseID),0) from EP_B_Enterprise where 
+EnterpriseID>@id; 
+end 
+
+
+===================================================================
+
+declare @maxID int,@id int,@sql nvarchar(max); 
+select @id=MIN(EnterpriseID),@maxID=MAX(EnterpriseID) from EP_B_Enterprise 
+
+while @id<=@maxID and @id>0 
+begin 
+
+--B_Standard
+SET @sql='
+INSERT INTO dbo.EP_B_Standard( EnterpriseID ,NewAmount ,CommAmount ,TradedAmount ,TradedMoney ,AddDate ,UpdateDate)
+SELECT @id,NewAmount,CommAmount,TradedAmount,TradedMoney,AddDate,UpdateDate FROM '+dbo.GetEPTableName(@id,'B_Standard')
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_PropertyConfig
+SET @sql ='INSERT INTO dbo.EP_B_PropertyConfig( EnterpriseID ,SourceFlag ,TradeFlag ,AreaFlag ,AddDate ,UpdateDate)
+SELECT @id,SourceFlag,TradeFlag,AreaFlag,AddDate,UpdateDate FROM '+dbo.GetEPTableName(@id,'B_PropertyConfig');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_MailConfig
+SET @sql ='INSERT INTO dbo.EP_B_MailConfig( EnterpriseID ,EPUserID ,Name ,Email ,SMTP ,Port ,UserName ,[Password])
+SELECT @id,EPUserID ,Name ,Email ,SMTP ,Port ,UserName ,[Password] FROM '+dbo.GetEPTableName(@id,'B_MailConfig') ;
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+
+--B_Item
+SET @sql ='INSERT INTO dbo.EP_B_Item( EnterpriseID, ItemName )
+SELECT @id,ItemName FROM '+dbo.GetEPTableName(@id,'B_Item');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_TeamScale
+SET @sql ='INSERT INTO dbo.EP_B_TeamScale( EnterpriseID ,TeamModelID ,TeamScaleXml ,LatenDay ,WishDay ,LRemindDay 
+,WRemindDay ,NotTradedID)
+SELECT @id,TeamModelID ,TeamScaleXml ,LatenDay ,WishDay ,LRemindDay ,WRemindDay ,NotTradedID FROM 
+'+dbo.GetEPTableName(@id,'B_TeamScale') ;
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_Talk
+SET @sql ='INSERT INTO dbo.EP_B_Talk( EnterpriseID ,TalkSubject ,Detail ,AddDate,Sort )
+SELECT @id,TalkSubject,Detail,AddDate,Sort FROM '+dbo.GetEPTableName(@id,'B_Talk');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+
+print @id; 
+select @id=isnull(MIN(EnterpriseID),0) from EP_B_Enterprise where 
+EnterpriseID>@id; 
+end 
+
+
+========================2012-02-06============================
+--B_Material
+SET @sql='INSERT INTO dbo.EP_B_Material( EnterpriseID ,MaterialName ,ClassName ,AddDate ,UpdateDate,oldID)
+SELECT @id,MaterialName,ClassName,AddDate,UpdateDate,MaterialID FROM '+dbo.GetEPTableName(@id,'B_Material');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_MaterialFile
+SET @sql ='INSERT INTO dbo.EP_B_MaterialFile(EnterpriseID, MaterialID ,[FileName] ,Url ,FileType ,FileSize)
+SELECT @id,m.MaterialID,[FileName],Url,FileType,FileSize FROM 
+(SELECT MaterialID,[FileName],Url,FileType,FileSize FROM '+dbo.GetEPTableName(@id,'B_MaterialFile')+' ) mf
+INNER JOIN (SELECT MaterialID,oldID FROM dbo.EP_B_Material WHERE EnterpriseID =@id) m ON mf.MaterialID= m.oldID;';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+
+
+SET @sql ='INSERT INTO dbo.EP_B_StudyMaterial( EnterpriseID ,MaterialName ,AddDate ,UpdateDate,oldID)
+SELECT @id,MaterialName,AddDate,UpdateDate,StudyMaterialID FROM '+dbo.GetEPTableName(@id,'B_StudyMaterial');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+SET @sql='INSERT INTO dbo.EP_B_StudyMateFile(EnterpriseID, StudyMaterialID ,[FileName] ,Url ,FileType ,FileSize)
+SELECT @id,m.StudyMaterialID,[FileName] ,Url ,FileType ,FileSize FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_StudyMateFile')+') mf
+INNER JOIN (SELECT *FROM dbo.EP_B_StudyMaterial WHERE EnterpriseID = @id ) m ON mf.StudyMaterialID= m.oldID;';
+
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+
+============================Material StudyMaterial=============================
+
+
+declare @maxID int,@id int,@sql nvarchar(max); 
+select @id=MIN(EnterpriseID),@maxID=MAX(EnterpriseID) from EP_B_Enterprise 
+
+while @id<=@maxID and @id>0 
+begin 
+
+/*
+--B_Material
+SET @sql='INSERT INTO dbo.EP_B_Material( EnterpriseID ,MaterialName ,ClassName ,AddDate ,UpdateDate,oldID)
+SELECT @id,MaterialName,ClassName,AddDate,UpdateDate,MaterialID FROM '+dbo.GetEPTableName(@id,'B_Material');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+--B_MaterialFile
+SET @sql ='INSERT INTO dbo.EP_B_MaterialFile(EnterpriseID, MaterialID ,[FileName] ,Url ,FileType ,FileSize)
+SELECT @id,m.MaterialID,[FileName],Url,FileType,FileSize FROM 
+(SELECT MaterialID,[FileName],Url,FileType,FileSize FROM '+dbo.GetEPTableName(@id,'B_MaterialFile')+' ) mf
+INNER JOIN (SELECT MaterialID,oldID FROM dbo.EP_B_Material WHERE EnterpriseID =@id) m ON mf.MaterialID= m.oldID;';
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+
+
+SET @sql ='INSERT INTO dbo.EP_B_StudyMaterial( EnterpriseID ,MaterialName ,AddDate ,UpdateDate,oldID)
+SELECT @id,MaterialName,AddDate,UpdateDate,StudyMaterialID FROM '+dbo.GetEPTableName(@id,'B_StudyMaterial');
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+
+SET @sql='INSERT INTO dbo.EP_B_StudyMateFile(EnterpriseID, StudyMaterialID ,[FileName] ,Url ,FileType ,FileSize)
+SELECT @id,m.StudyMaterialID,[FileName] ,Url ,FileType ,FileSize FROM 
+(SELECT * FROM '+dbo.GetEPTableName(@id,'B_StudyMateFile')+') mf
+INNER JOIN (SELECT *FROM dbo.EP_B_StudyMaterial WHERE EnterpriseID = @id ) m ON mf.StudyMaterialID= m.oldID;';
+
+EXEC sys.sp_executesql @sql,N'@id int',@id;
+*/
+
+/*
+SET @sql='
+DROP TABLE '+dbo.GetEPTableName(@id,'B_Material')+'
+DROP TABLE '+dbo.GetEPTableName(@id,'B_MaterialFile')+'
+DROP TABLE '+dbo.GetEPTableName(@id,'B_StudyMaterial')+'
+DROP TABLE '+dbo.GetEPTableName(@id,'B_StudyMateFile')+'
+'
+EXEC sys.sp_executesql @sql;
+*/
+
+print @id; 
+select @id=isnull(MIN(EnterpriseID),0) from EP_B_Enterprise where 
+EnterpriseID>@id; 
+end 

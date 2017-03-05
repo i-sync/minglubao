@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E0C1DA7-EE05-4BBC-9D6C-03894A2AE809}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLMGC.IDAL</RootNamespace>
+    <AssemblyName>MLMGC.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enterprise\Announcement\I_D_Announcement.cs" />
+    <Compile Include="Enterprise\Config\I_D_Standard.cs" />
+    <Compile Include="Enterprise\I_D_Allot.cs" />
+    <Compile Include="Enterprise\I_D_Apply.cs" />
+    <Compile Include="Enterprise\I_D_Area.cs" />
+    <Compile Include="Enterprise\I_D_ClientInfo.cs" />
+    <Compile Include="Enterprise\I_D_ClientInfoData.cs" />
+    <Compile Include="Enterprise\I_D_ClientInfoHelper.cs" />
+    <Compile Include="Enterprise\I_D_Enterprise.cs" />
+    <Compile Include="Enterprise\I_D_EnterpriseDB.cs" />
+    <Compile Include="Enterprise\I_D_Exchange.cs" />
+    <Compile Include="Enterprise\I_D_Item.cs" />
+    <Compile Include="Enterprise\I_D_ItemMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\I_D_Log.cs" />
+    <Compile Include="Enterprise\I_D_MailConfig.cs" />
+    <Compile Include="Enterprise\I_D_Menu.cs" />
+    <Compile Include="Enterprise\I_D_NotTraded.cs" />
+    <Compile Include="Enterprise\I_D_Property.cs" />
+    <Compile Include="Enterprise\I_D_Scrap.cs" />
+    <Compile Include="Enterprise\I_D_Source.cs" />
+    <Compile Include="Enterprise\I_D_Team.cs" />
+    <Compile Include="Enterprise\I_D_TeamModel.cs" />
+    <Compile Include="Enterprise\I_D_Trade.cs" />
+    <Compile Include="Enterprise\I_D_Weibo.cs" />
+    <Compile Include="Enterprise\I_D_Wish.cs" />
+    <Compile Include="Enterprise\Material\I_D_Material.cs" />
+    <Compile Include="Enterprise\Material\I_D_Question.cs" />
+    <Compile Include="Enterprise\Material\I_D_StudyMaterial.cs" />
+    <Compile Include="Enterprise\Material\I_D_Talk.cs" />
+    <Compile Include="Enterprise\Plan\I_D_TeamPlan.cs" />
+    <Compile Include="Enterprise\Plan\I_D_UserPlan.cs" />
+    <Compile Include="Item\I_D_ItemMember.cs" />
+    <Compile Include="I_D_Feedback.cs" />
+    <Compile Include="Item\I_D_ItemClientInfo.cs" />
+    <Compile Include="Item\I_D_ItemExchange.cs" />
+    <Compile Include="Item\I_D_ItemApply.cs" />
+    <Compile Include="I_D_Region.cs" />
+    <Compile Include="Personal\Config\I_D_Area.cs" />
+    <Compile Include="Personal\Config\I_D_MailConfig.cs" />
+    <Compile Include="Personal\Config\I_D_NotTraded.cs" />
+    <Compile Include="Personal\Config\I_D_Property.cs" />
+    <Compile Include="Personal\Config\I_D_Scrap.cs" />
+    <Compile Include="Personal\Config\I_D_Source.cs" />
+    <Compile Include="Personal\Config\I_D_Trade.cs" />
+    <Compile Include="Personal\Config\I_D_Wish.cs" />
+    <Compile Include="Personal\I_D_ClientInfo.cs" />
+    <Compile Include="Personal\I_D_Exchange.cs" />
+    <Compile Include="Personal\I_D_JobExperience.cs" />
+    <Compile Include="Personal\I_D_Weibo.cs" />
+    <Compile Include="Personal\Material\I_D_Talk.cs" />
+    <Compile Include="Public\I_D_Announcement.cs" />
+    <Compile Include="User\I_D_Admin.cs" />
+    <Compile Include="User\I_D_Personal.cs" />
+    <Compile Include="User\I_D_User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WenKu\I_D_WenKu.cs" />
+    <Compile Include="WenKu\I_D_WenKuClass.cs" />
+    <Compile Include="WenKu\I_D_WenKuDownload.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MLMGC.DataEntity\MLMGC.DataEntity.csproj">
+      <Project>{DC24AC27-029E-4457-99A8-A99AA402E0E7}</Project>
+      <Name>MLMGC.DataEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

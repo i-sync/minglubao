@@ -1,0 +1,125 @@
+时间:2012-06-06 16:55:49
+	异常对象：.Net SqlClient Data Provider
+引发当前异常的方法:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+堆栈跟踪:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 MLMGC.DBUtility.DbHelperSQL.RunProcedureTable(String storedProcName, IDataParameter[] parameters) 位置 E:\名录宝\MLMGC\MLMGC.DBUtility\DbHelperSQL.cs:行号 1099
+   在 MLMGC.DAL.Personal.D_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.DAL\Personal\D_ClientInfo.cs:行号 331
+   在 MLMGC.BLL.Personal.T_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.BLL\Personal\T_ClientInfo.cs:行号 119
+   在 Web.Personal.Search.databind() 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 44
+   在 Web.Personal.Search.Page_Load(Object sender, EventArgs e) 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 21
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+错误信息:在将 nvarchar 值 '
+	select top 20 * from PI_B_ClientInfo where  PersonalID=@PersonalID ' 转换成数据类型 int 时失败。
+
+时间:2012-06-06 16:56:53
+	异常对象：.Net SqlClient Data Provider
+引发当前异常的方法:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+堆栈跟踪:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 MLMGC.DBUtility.DbHelperSQL.RunProcedureTable(String storedProcName, IDataParameter[] parameters) 位置 E:\名录宝\MLMGC\MLMGC.DBUtility\DbHelperSQL.cs:行号 1099
+   在 MLMGC.DAL.Personal.D_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.DAL\Personal\D_ClientInfo.cs:行号 331
+   在 MLMGC.BLL.Personal.T_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.BLL\Personal\T_ClientInfo.cs:行号 119
+   在 Web.Personal.Search.databind() 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 44
+   在 Web.Personal.Search.Page_Load(Object sender, EventArgs e) 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 21
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+错误信息:列名 'ClientInfo' 无效。
+
+时间:2012-06-06 16:57:36
+	异常对象：.Net SqlClient Data Provider
+引发当前异常的方法:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+堆栈跟踪:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 MLMGC.DBUtility.DbHelperSQL.RunProcedureTable(String storedProcName, IDataParameter[] parameters) 位置 E:\名录宝\MLMGC\MLMGC.DBUtility\DbHelperSQL.cs:行号 1099
+   在 MLMGC.DAL.Personal.D_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.DAL\Personal\D_ClientInfo.cs:行号 331
+   在 MLMGC.BLL.Personal.T_ClientInfo.Select(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.BLL\Personal\T_ClientInfo.cs:行号 119
+   在 Web.Personal.Search.databind() 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 44
+   在 Web.Personal.Search.Page_Load(Object sender, EventArgs e) 位置 E:\名录宝\MLMGC\Web\Personal\Search.aspx.cs:行号 21
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+错误信息:列名 'ClientInfo' 无效。
+
+时间:2012-06-06 17:28:49
+	异常对象：.Net SqlClient Data Provider
+引发当前异常的方法:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+堆栈跟踪:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   在 MLMGC.DBUtility.DbHelperSQL.RunProcedureTable(String storedProcName, IDataParameter[] parameters) 位置 E:\名录宝\MLMGC\MLMGC.DBUtility\DbHelperSQL.cs:行号 1099
+   在 MLMGC.DAL.Personal.D_ClientInfo.LatenceSelect(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.DAL\Personal\D_ClientInfo.cs:行号 371
+   在 MLMGC.BLL.Personal.T_ClientInfo.LatenceSelect(E_ClientInfo data) 位置 E:\名录宝\MLMGC\MLMGC.BLL\Personal\T_ClientInfo.cs:行号 129
+   在 Web.Personal.Latence.databind() 位置 E:\名录宝\MLMGC\Web\Personal\Latence.aspx.cs:行号 63
+   在 Web.Personal.Latence.Page_Load(Object sender, EventArgs e) 位置 E:\名录宝\MLMGC\Web\Personal\Latence.aspx.cs:行号 27
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+错误信息:列名 'Stauts' 无效。
+

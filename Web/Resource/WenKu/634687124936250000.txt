@@ -1,0 +1,73 @@
+“国甲”魔方是国内第一款DIY魔方，多年来得到了无数魔友的认可，
+可以说是一款享有很高声誉的魔方。多年来受到无数魔友的认可，
+直到现在来看，国甲是经典的。
+1、国甲的特点是非常顺滑而且不易pop，用料很足，质量超好，特
+别经摔。缺点是重量稍重，逆容错性略小，安装时要是不去掉分模
+线还会影响到手感顺滑。由于它的这些特点，国甲是国内公认的最
+适合初学者和高手训练用的魔方，它最有利于你打下扎实的魔方基
+本功，使得你的手法精确到位而且不缺乏指力。
+2、手感介于柔和和脆而轻快之间，让人感觉很舒适，上了硅油之后
+，非常滑快。许多许多魔友的第一个魔方都是国甲魔方，国甲魔方
+通常磨合期稍长一点，内部的毛刺、分模线相对稍微多一点点，在
+你玩的过程中，内部的毛刺会慢慢磨圆，基本上你会感觉国甲越用
+越好用的。
+注意事项：在使用过一段时间后，要用润滑油调试一下产品，以防
+产品太涩影响使用。
+三阶魔方花样公式汇总：
+六面回字公式 U' D F' B L R' U' D ；
+四色回字公式B2 L R B L2 B F D U' B F R2 F' L R ；
+对称棋盘公式 L2 R2 F2 B2 U2 D2 ；
+循环棋盘公式D2 F2 U'B2 F2 L2 R2 D R' B F D'U L R D2 U2 F'U2 
+；
+六面十字公式B2 F' L2 R2 D2 B2 F2 L2 R2 U2 F'；
+四面十字公式D F2 R2 F2 D' U R2 F2 R2 U'；
+双色十字公式U' D F' B L R' U' D L2 R2 F2 B2 U2 D2；
+三色十字公式B F' L2 R2 U D'；
+四色十字公式U2 R B D B F' L' U' B F' L F L' R D U2 F' R' 
+U2；
+五彩十字公式L2 D' F2 D B D L F R' U' R' D' F L2 B F2 L；
+六面皇后公式R2 B2 U2 L2 B2 U2 F2 L2 D L' R F L2 F' U' D L；
+六面五色公式U B2 L2 B F' U F' D2 L D2 F D R2 F2 R' B' U' R' 
+；
+六面六色公式D2 U2 L2 B R2 D' L2 R2 D2 B2 F2 U' R2 B' R2；
+六面彩条公式F2 U2 F2 B2 U2 F B；
+六面三条公式(U2 L2)3 (U2 R2)3 U D L2 R2；
+六面凹字公式F2 L' R B2 U2 L R' D2 ；
+六面凹字公式U D L2 F2 U D' B2 R2 D2；
+六面凸字公式F2 R F2 R'U2 F2 L U2 B2 U2 F'U2 R D' B2 D F'D2 
+R F；
+六面工字公式D2 ML' F2 B2 ML' D2；
+六面Q字公式D F2 U' B F' L R' D L2 U' B R2 B' U L2 U'；
+六面J字公式D2 L2 D R2 U B2 U2 B R' B' D B2 R' F R2 F' U 
+R'；
+六面L字公式L R U D F' B' L R；
+六面彩E公式F2 R2 F2 U' R' B2 F L R' U L' R U B U2 F2 D' 
+U'；
+六面C U公式D' U B D' L' R F D' B' D' U L；
+六面T字公式U2 F2 R2 D U' L2 B2 D U或者B2 D2 L R' D2 B2 L 
+R'；
+四面Z字公式( F B R L )3 (U D')2；
+四面I字公式R2 F2 R2 L2 F2 L2；
+四面L字公式B F D U L2 D U' B F'；
+四面O字公式U R2 L2 U D' F2 B2 D'；
+四面E字公式R2 U2 F2 R2 U2 R2 F2 U2；
+四面V Y公式D2 R L U2 R2 L2 U2 R L； 
+四面C U公式R2 F2 B2 L2 U F2 R2 L2 B2 D'C C T V公式一B2 R2 
+D2 U2 F2 L R' U2 L' R' C C T V公式二L2 B2 R2 D2 R2 F2 U2 F2 
+R2 U2 R2 ；
+六面斜线公式B L2 U2 L2 B' F' U2 R' B F R2 D' L R' D' U R F' 
+；
+三色斜线公式R F2 L' D2 F2 L' R2 B' L' B' F' D' U R F' D R' 
+B R'；
+四面斜线公式F B L R F B L R F B L R；大小魔方公式U2 L2 F2 
+U' B2 D R F' R F' R F' D' B2 U'；
+大中小魔公式BL'D2LDF'D2FD'B'F'RU2R'U'BU2B'UF 
+(R'D2RB'U2B)2；
+大中小魔公式F D2 L2 B D B' F2 U' F U F2 U2 F' L D F' U ；
+六面弓箭公式R U F2 D'R L'F B'D' F' R F2 R U2 F R2 
+F'R'U'F'U2 F R；
+六面双环公式B R L' D' R2 D R' L B' R2 U B2 U' D B2 R L U2 
+R' L' B2 D'；
+六面蛇形公式B R L' D' R2 D R' L B' R2 U B2 U' D R2 D'；
+彩带魔方公式D2 L' U2 FL2 D2 U R2 D L2 B' L2 U L D' R2 U'；
+六面鱼形公式L2 D B2 U R2 B2 D L' B2 F'D'U R'D2 R'B2 F'U'F'
